@@ -1,0 +1,203 @@
+1. answer:
+
+
+<html>
+	<head>
+		<title>JavaScript to display current Date and Time.</title>
+		<script type="text/javascript">
+			function getCurrentDate(){
+				var curDate=new Date();
+				document.getElementById("showDate").innerHTML = curDate.toString();
+			}
+		</script>
+	</head>
+<body onLoad='getCurrentDate()' style="text-align: center">
+    <h1>Get current date using JavaScript.</h1>
+    <!--Here date and time will display-->
+    <h2 id="showDate"></h2>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+2. answer:
+
+
+<!DOCTYPE html> 
+
+<html> 
+
+  
+
+<head> 
+
+    <title> 
+
+        HTML | DOM Window Print() method 
+
+    </title> 
+
+  
+
+    <script type="text/javascript"> 
+
+    </script> 
+
+  
+
+</head> 
+
+  
+
+<body> 
+
+  
+
+    <h2>Hi LetsUpgrade community</h2> 
+
+    <form> 
+
+        <input type="button" value="Print" 
+
+               onclick="window.print()" /> 
+
+    </form> 
+
+  
+
+</body> 
+
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. answer:
+
+
+<!DOCTYPE HTML> 
+
+<html> 
+
+  
+
+<head> 
+
+    <title> 
+
+        JavaScript  
+
+      | How to get current formatted date dd/mm/yyyy. 
+
+    </title> 
+
+</head> 
+
+  
+
+<body style="text-align:center;"
+
+      id="body"> 
+
+    <h1 style="color:green;">   
+
+            GeeksForGeeks   
+
+        </h1> 
+
+    <p id="GFG_UP" 
+
+       style="font-size: 15px;  
+
+              font-weight: bold;"> 
+
+    </p> 
+
+    <button onclick="gfg_Run()"> 
+
+        get Date 
+
+    </button> 
+
+    <p id="GFG_DOWN" 
+
+       style="color:green;  
+
+              font-size: 20px;  
+
+              font-weight: bold;"> 
+
+    </p> 
+
+    <script> 
+
+        var el_up = document.getElementById("GFG_UP"); 
+
+        var el_down = document.getElementById("GFG_DOWN"); 
+
+        var today = new Date(); 
+
+        el_up.innerHTML = today; 
+
+        var dd = today.getDate(); 
+
+        var mm = today.getMonth() + 1; 
+
+  
+
+        var yyyy = today.getFullYear(); 
+
+        if (dd < 10) { 
+
+            dd = '0' + dd; 
+
+        } 
+
+        if (mm < 10) { 
+
+            mm = '0' + mm; 
+
+        } 
+
+        var today = dd + '/' + mm + '/' + yyyy; 
+
+  
+
+        function gfg_Run() { 
+
+            el_down.innerHTML = today; 
+
+        } 
+
+    </script> 
+
+</body> 
+
+  
+
+</html>

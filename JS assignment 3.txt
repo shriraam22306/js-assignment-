@@ -1,0 +1,55 @@
+question:1 JS
+
+let val = confirm("Are you above the age 21?");
+console.log(val)
+let age = prompt("What is your age");
+console.log(age);
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi hello!!</h1>
+    <script src="scripts/confirm.js"></script>
+</body>
+</html>
+
+
+
+question:2 js
+
+
+//string
+let txt = " hi gGhello Wwelcome to javascript.";
+    console.log(txt.length);
+    console.log(txt.substring(1,5));
+    // Array
+let arr = ["orange", "banana"];
+let arr1 = ["lemon"];
+console.log(arr.concat(arr1));
+console.log(arr.length);
+console.log(arr.pop);
+console.log(arr);
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>hi hello </h1>
+    <script src="scripts/str.js"></script>
+        <script src="scripts/prompt.js"></script>
+</body>
+</body>
+</html>

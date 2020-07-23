@@ -1,0 +1,196 @@
+QUESTION 1 :
+
+
+<html>
+<head>
+<title>Change Page Background Every 5 seconds</title>
+
+
+<script type="text/javascript">
+
+
+// Description: Randomly change background color every 5 seconds
+
+
+function setbackground()
+{
+window.setTimeout( "setbackground()", 5000); // 5000 milliseconds delay
+
+
+var index = Math.round(Math.random() * 9);
+
+
+var ColorValue = "FFFFFF"; // default color - white (index = 0)
+
+
+if(index == 1)
+ColorValue = "FFCCCC"; //peach
+if(index == 2)
+ColorValue = "CCAFFF"; //violet
+if(index == 3)
+ColorValue = "A6BEFF"; //lt blue
+if(index == 4)
+ColorValue = "99FFFF"; //cyan
+if(index == 5)
+ColorValue = "D5CCBB"; //tan
+if(index == 6)
+ColorValue = "99FF99"; //lt green
+if(index == 7)
+ColorValue = "FFFF99"; //lt yellow
+if(index == 8)
+ColorValue = "FFCC99"; //lt orange
+if(index == 9)
+ColorValue = "CCCCCC"; //lt grey
+
+
+document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+
+
+}
+</script>
+
+
+
+
+</head>
+<body onload="setbackground();"> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+QUESTION 2:
+
+
+<html>
+<head>
+<style>
+body {
+background: #F4F4F4;
+font-family: Arial;
+margin: 0;
+}
+</style>
+</head>
+<body>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Print Multiplication Table using JavaScript</h2></td>
+    </tr>
+ 
+    <tr>
+        <td width="28%">Enter a Number : </td>
+        <td><input type="number" onchange="printTable(this)"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><span id="mul"></span></td>
+    </tr>
+</table>
+ 
+<script>
+function printTable(num) {
+    var input = num.value;
+    if(!isNaN(input)) {
+        var table="";
+        var number="";
+        for(i=1;i<=10;i++) {
+            number = input * i;
+            table +=  input + " * " + i + " = " + number + "<br/>";
+        }
+        document.getElementById("mul").innerHTML = table;
+    }
+    else {
+        document.getElementById("mul").innerHTML = "Please Enter a valid Number";
+    }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+QUESTION 3:
+
+
+
+
+<!DOCTYPE html>
+ <html>
+
+
+<head>
+
+
+<script>
+
+
+var customerName = prompt("Please enter your name", ""); if (customerName!= null) {
+
+
+document.getElementByid("welcome").innerHTML
+
+
+=
+
+
+"Hello" + customerName + "! How are you today?"; }
+
+
+</script>
+
+
+</head>
+
+
+<body>
+
+
+<div id="welcome">My First JavaScript code.
+
+
+</div>
+
+
+function current Time() { hour = updateTime(hour);
+
+
+min = updateTime(min):
+
+
+sec = updateTime(sec);
+
+
+function updateTime(k) { if (k < 10) { return "0" + k;
+
+
+}
+
+
+else {
+
+
+return k;
+
+
+}
+}
+{
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+</body> </html>
